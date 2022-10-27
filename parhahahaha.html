@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>hi</title>
+
+<script type="text/javascript">
+flag=1
+function f1()
+{
+    var Name = prompt("what should i call you?");
+    
+    if(Name == "" || Name == null) {
+    alert("lah lagay mo yung itatawag ko sayo");
+    } else {
+    alert("helo " + Name + ", always remember you're special to me"); 
+    alert("you're always beautiful also your eyes and your smile")
+    alert("i'll always love you " + Name + " yahahahah")
+    alert("mwa")
+    }
+}
+function f()
+{
+    if(flag==1)
+        {
+            Bn.style.top=400
+            Bn.style.left=300
+            flag=2
+        }
+    else if(flag==2)
+        {
+            Bn.style.top=400
+            Bn.style.left=50
+            flag=3
+        }
+    else if(flag==3)
+        {
+            Bn.style.top=370
+            Bn.style.left=166
+            flag=1
+        }
+}
+</script>
+
+</head>
+<body>
+<h1> par laham kita</h1>
+<img src="https://media.tenor.com/zPtxGi-xH6IAAAAi/pusheen-love.gif" height="200" />
+<h1 style="#">laham mo rin ba em?</h1>
+<div id="By" style="position:absolute; left:64px; top:370px; width:210px;
+height:210px;">
+<input type="button" value=" YES " onClick="f1()" />
+</div>
+<div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+<input type="button" value=" NO " onMouseOver="f()" />
+</div>
+
+</body>
+</html>
